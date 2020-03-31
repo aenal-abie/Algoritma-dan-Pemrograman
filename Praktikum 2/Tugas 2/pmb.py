@@ -2,7 +2,7 @@ spp = 2000000
 input("Nama Mahasiswa: ")
 input("No Pendaftaran: ")
 status_ranngking =  int(input("Apakah pendaftar memiliki rangking(1: Ya , 0:Tidak): "))
-if(status_ranngking ==1):
+if(status_ranngking):
     rangking  =  int(input("-- Masukkan rangking kelas (1-3): "))
     if(rangking==1):
         potongan_dpp = 1
@@ -14,7 +14,7 @@ if(status_ranngking ==1):
     dpp =  10000000
     dpp = dpp - (dpp*potongan_dpp)
     lain_lain = 0
-elif(status_ranngking==0):
+else:   
     nilai = int(input("-- Masukkan nilai tes: ")) 
     if(nilai>80):
         kategori = 1 
